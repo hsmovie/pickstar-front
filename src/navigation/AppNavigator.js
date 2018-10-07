@@ -16,7 +16,7 @@ class AppNavigator extends Component {
       // You could add another route here for authentication.
       // Read more at https://reactnavigation.org/docs/en/auth-flow.html
       Auth: AuthNavigator,
-      AuthLoading: { screen: SplashScreen },
+      // AuthLoading: { screen: SplashScreen },
       Main: MainTabNavigator,
     }, navigatorConfig)
 

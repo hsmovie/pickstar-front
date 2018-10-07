@@ -53,6 +53,7 @@ class IntroScreen extends Component {
           />
         </View>
         <View style={buttonBoxStyle}>
+
           <ButtonWithoutFeedback
             viewStyle={buttonStyle}
             textStyle={buttonTextStyle}
@@ -60,6 +61,7 @@ class IntroScreen extends Component {
           >
             둘러보기
           </ButtonWithoutFeedback>
+
           <ButtonWithoutFeedback
             viewStyle={buttonStyle}
             textStyle={buttonTextStyle}
@@ -68,10 +70,13 @@ class IntroScreen extends Component {
             시작하기
           </ButtonWithoutFeedback>
         </View>
+
+
         <ConfirmModal
           modalVisible={this.state.modalVisible}
           leftButtonFn={() => NavigationService.navigate('Main')}
           rightButtonFn={() => this.moveToLogin()}
+          closeConfirmModal={() => this.closeConfirmModal()}
           leftButtonText="둘러보기"
           rightButtonText="로그인"
         />
